@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>나의 p5.js 작품 모음</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #1a1a2e;
+      color: #eee;
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    header h1 {
+      font-size: 2em;
+      color: #f0c040;
+      margin-bottom: 8px;
+    }
+    header p {
+      color: #aaa;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .project {
+      background: #2a2a4a;
+      border-radius: 12px;
+      padding: 24px;
+      border: 1px solid #3a3a6a;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .project:hover {
+      transform: translateY(-4px);
+      border-color: #f0c040;
+    }
+    .project .num {
+      font-size: 0.85em;
+      color: #f0c040;
+      margin-bottom: 8px;
+    }
+    .project h2 {
+      font-size: 1.1em;
+      margin-bottom: 8px;
+    }
+    .project p {
+      font-size: 0.9em;
+      color: #aaa;
+      margin-bottom: 16px;
+      line-height: 1.5;
+    }
+    .project a {
+      display: inline-block;
+      padding: 8px 18px;
+      background: #f0c040;
+      color: #1a1a2e;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.9em;
+    }
+    .project a:hover {
+      background: #ffd966;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🎨 나의 p5.js 작품 모음</h1>
+    <p>클릭하여 작품을 감상하세요</p>
+  </header>
+
+  <div class="projects">
+
+    <div class="project">
+      <div class="num">과제 1</div>
+      <h2>🌙 밤하늘 장면 (정적)</h2>
+      <p>달빛 아래 두 배가 마주보며 활을 겨누는 야경 장면입니다.</p>
+      <a href="project1/index.html">보러가기 →</a>
+    </div>
+
+    <div class="project">
+      <div class="num">과제 2</div>
+      <h2>📷 카메라 캐리커처 (정적)</h2>
+      <p>카메라를 들고 있는 사람을 p5.js 도형으로 표현한 그림입니다.</p>
+      <a href="project2/index.html">보러가기 →</a>
+    </div>
+
+    <div class="project">
+      <div class="num">과제 3</div>
+      <h2>📸 인터랙티브 캐리커처</h2>
+      <p>마우스를 따라 눈이 움직이고, 스페이스바를 누르면 플래시가 터집니다!</p>
+      <a href="project3/index.html">보러가기 →</a>
+    </div>
+
+    <div class="project">
+      <div class="num">과제 4</div>
+      <h2>✨ 밤하늘 애니메이션</h2>
+      <p>달이 맥동하고 색이 변하며, 두 사람 사이로 화살이 날아다닙니다.</p>
+      <a href="project4/index.html">보러가기 →</a>
+    </div>
+
+  </div>
+</body>
+</html>
